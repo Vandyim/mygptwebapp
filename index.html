@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Voice Notes Task Prioritizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Voice Notes → Prioritized To-Do List</h1>
+    <p class="subtitle">Record quick voice notes, transcribe them, then rank tasks by priority.</p>
+
+    <section class="card controls">
+      <button id="recordBtn" class="primary">🎙️ Start Recording</button>
+      <span id="status">Idle</span>
+      <p class="hint">Uses your browser speech recognition when available.</p>
+    </section>
+
+    <section class="card">
+      <h2>Transcript</h2>
+      <textarea id="transcript" rows="8" placeholder="Your spoken notes appear here..."></textarea>
+      <button id="extractBtn">Generate To-Do List</button>
+    </section>
+
+    <section class="card">
+      <h2>Prioritized Tasks</h2>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
